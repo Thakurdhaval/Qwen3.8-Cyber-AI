@@ -170,7 +170,7 @@ Follow [the Kaggle starter setup guide](docs/kaggle_setup.md).
    `https://raw.githubusercontent.com/Thakurdhaval/Qwen3.8-Cyber-AI/main/notebooks/qwen38_flash_next_125b_gyro_s_t4x2.ipynb`
 
 4. Select a GPU runtime and confirm that the session actually exposes the required hardware.
-5. Read the notebook's warnings and review third-party setup code before running it.
+5. Read the notebook's warnings and review `app/kaggle_runtime.py` and the linked Strata documentation before running it.
 6. Execute the preflight checks before starting model downloads or launch steps.
 
 See [the detailed 125B setup guide](docs/kaggle_125b_gyro_s.md).
