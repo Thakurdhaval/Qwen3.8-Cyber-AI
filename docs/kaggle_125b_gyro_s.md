@@ -21,13 +21,13 @@ These are upstream estimates and observed configuration notes, not a guarantee. 
 
 Run notebook cells from top to bottom:
 
-1. Load helper code and credentials.
-2. Detect GPU hardware and restore any personal private caches.
+1. Load the project-maintained Kaggle runtime module and credentials.
+2. Detect GPU hardware and prepare the model directory.
 3. Install Strata if it is not already present.
 4. Review the Strata launch plan. Stop if it reports an unsupported backend, model, GPU selection, or missing dependency.
 5. Launch the model with API-key protection.
 6. Verify that unauthenticated API requests are rejected and an authenticated generation request succeeds.
-7. Optionally save personal model/runtime caches to private Kaggle datasets, only after checking the model license.
+7. Model/runtime cache upload is not included; files may need to be downloaded again in a new Kaggle session.
 8. Optionally connect OpenCode Desktop while the Kaggle session and temporary tunnel remain active.
 
 
@@ -51,8 +51,7 @@ Run notebook cells from top to bottom:
 
 - [Strata model compatibility and memory guide](https://github.com/Niko1221/Strata/blob/main/docs/MODELS.md)
 - [Strata Gyro documentation](https://github.com/Niko1221/Strata/blob/main/docs/GYRO.md)
-- [Third-party Kaggle setup helper source](https://github.com/iAmAjayTeli/devzonex-strata-kaggle)
 
 ## Third-party components and trust
 
-The notebook integrates a [third-party Kaggle setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to upstream commit [`ca775962d90a7bc2a4b2db6eecb052e0e399c94c`](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c), and installs [Strata](https://github.com/Niko1221/Strata). The helper installs packages, downloads model/runtime components, may upload caches to datasets in your Kaggle account, and can expose a temporary Cloudflare Quick Tunnel. Review the linked source code and commands before execution. Third-party components are not maintained or audited by this project.
+The notebook uses the project-maintained `app/kaggle_runtime.py` module for Kaggle credentials, GPU checks, Strata installation/launch, health checks, and endpoint verification. It invokes the separately maintained [Strata inference engine](https://github.com/Niko1221/Strata) and may use [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared) for temporary HTTPS access. Those external components are not authored or maintained by this repository and remain subject to their own licenses and terms.
