@@ -30,9 +30,6 @@ Run notebook cells from top to bottom:
 7. Optionally save personal model/runtime caches to private Kaggle datasets, only after checking the model license.
 8. Optionally connect OpenCode Desktop while the Kaggle session and temporary tunnel remain active.
 
-## Third-party components and trust
-
-The notebook integrates a [third-party Kaggle setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to upstream commit [`ca775962d90a7bc2a4b2db6eecb052e0e399c94c`](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c), and installs [Strata](https://github.com/Niko1221/Strata). The helper installs packages, downloads model/runtime components, may upload caches to datasets in your Kaggle account, and can expose a temporary Cloudflare Quick Tunnel. Review the linked source code and commands before execution. Third-party components are not maintained or audited by this project.
 
 ## Security warnings
 
@@ -55,3 +52,7 @@ The notebook integrates a [third-party Kaggle setup helper](https://github.com/i
 - [Strata model compatibility and memory guide](https://github.com/Niko1221/Strata/blob/main/docs/MODELS.md)
 - [Strata Gyro documentation](https://github.com/Niko1221/Strata/blob/main/docs/GYRO.md)
 - [Third-party Kaggle setup helper source](https://github.com/iAmAjayTeli/devzonex-strata-kaggle)
+
+## Third-party components and trust
+
+The notebook integrates a [third-party Kaggle setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to upstream commit [`ca775962d90a7bc2a4b2db6eecb052e0e399c94c`](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c), and installs [Strata](https://github.com/Niko1221/Strata). The helper installs packages, downloads model/runtime components, may upload caches to datasets in your Kaggle account, and can expose a temporary Cloudflare Quick Tunnel. Review the linked source code and commands before execution. Third-party components are not maintained or audited by this project.
