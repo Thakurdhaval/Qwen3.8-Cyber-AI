@@ -1,0 +1,5 @@
+# Install a platform-compatible PyTorch build separately.
+transformers>=4.51.0
+accelerate>=1.6.0
+bitsandbytes>=0.45.0
+gradio>=5.0.0
