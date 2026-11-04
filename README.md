@@ -113,3 +113,11 @@ Issues and pull requests are welcome. Please do not submit secrets, personal dat
 ## License
 
 This project is released under the MIT License. See [LICENSE](LICENSE).
+
+
+## Kaggle
+
+- For the experimental **Qwen3.8-Flash-Next 125B Gyro-S** path on a Kaggle **T4x2** session, see [the dedicated launcher notebook](notebooks/qwen38_flash_next_125b_gyro_s_t4x2.ipynb) and [setup guide](docs/kaggle_125b_gyro_s.md). This path uses the Strata engine and third-party Kaggle helper code; review the documented trust, hardware, and security warnings before running it.
+- For the smaller Transformers-based starter path, see [docs/kaggle_setup.md](docs/kaggle_setup.md).
+
+The 125B workflow is experimental and is not guaranteed to run in every Kaggle session. Verify that two T4 GPUs are actually visible and that the Strata launch plan succeeds before downloading or launching the model.
