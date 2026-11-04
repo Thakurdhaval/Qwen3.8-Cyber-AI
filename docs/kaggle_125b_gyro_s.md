@@ -52,6 +52,6 @@ Run notebook cells from top to bottom:
 - [Strata model compatibility and memory guide](https://github.com/Niko1221/Strata/blob/main/docs/MODELS.md)
 - [Strata Gyro documentation](https://github.com/Niko1221/Strata/blob/main/docs/GYRO.md)
 
-## Third-party components and trust
+## External runtime components
 
 The notebook uses the project-maintained `app/kaggle_runtime.py` module for Kaggle credentials, GPU checks, Strata installation/launch, health checks, and endpoint verification. It invokes the separately maintained [Strata inference engine](https://github.com/Niko1221/Strata) and may use [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared) for temporary HTTPS access. Those external components are not authored or maintained by this repository and remain subject to their own licenses and terms.
