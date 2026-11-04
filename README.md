@@ -1,18 +1,16 @@
 # Qwen3.8-Cyber-AI
 
-<p align="center">
-  <strong>An experimental, Kaggle-ready AI assistant for cybersecurity learning and defensive security research.</strong>
-</p>
+> An experimental AI assistant for cybersecurity learning and defensive security exploration, with a separate Kaggle workflow for the 125B Gyro-S model.
 
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white" alt="Python 3.10+"/></a>
-  <a href="https://www.gradio.app/"><img src="https://img.shields.io/badge/UI-Gradio-F97316?logo=gradio&logoColor=white" alt="Gradio"/></a>
-  <a href="https://www.kaggle.com/"><img src="https://img.shields.io/badge/Platform-Kaggle-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle"/></a>
+  <a href="https://www.gradio.app/"><img src="https://img.shields.io/badge/Gradio-UI-F97316?logo=gradio&logoColor=white" alt="Gradio"/></a>
+  <a href="https://www.kaggle.com/"><img src="https://img.shields.io/badge/Kaggle-Platform-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"/></a>
   <img src="https://img.shields.io/badge/Status-Experimental-orange" alt="Experimental"/>
 </p>
 
-> **Project naming and model clarification:** “Qwen3.8-Cyber-AI” is the repository/project name. It is not an official Qwen release and does not claim to create, reproduce, or own Qwen model weights. The starter application defaults to the configurable `Qwen/Qwen3-4B` model. A separate experimental notebook explores the Qwen3.8-Flash-Next 125B Gyro-S workflow through Strata.
+**Note:** This is an independent experimental project, not an official Qwen release. It does not create or claim ownership of Qwen model weights. The starter app defaults to `Qwen/Qwen3-4B`; the separate notebook explores a 125B Gyro-S workflow.
 
 ---
 
@@ -77,7 +75,7 @@ The experimental path depends on the hardware actually assigned to the Kaggle se
 
 ### Third-party components and project contributions
 
-The experimental notebook integrates the [Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to commit [`ca775962d90a7bc2a4b2db6eecb052e0e399c94c`](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the upstream helper and its dependencies before execution.
+The experimental notebook uses a [third-party Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to [a specific upstream commit](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the source code and dependencies before execution.
 
 The project-specific configuration, notebook integration, cybersecurity learning focus, and documentation in this repository are maintained as part of this project. Third-party components remain subject to their respective upstream licenses and terms.
 
