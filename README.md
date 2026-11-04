@@ -296,8 +296,8 @@ This project is distributed under the [MIT License](LICENSE).
   Maintained by <a href="https://github.com/Thakurdhaval">Dhaval</a>
 </p>
 
-## Credits and external components
+## External components
 
-The experimental notebook uses a [third-party Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to [a specific upstream commit](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the source code and dependencies before execution.
+The Kaggle workflow uses the project-maintained orchestration module in `app/kaggle_runtime.py`. It invokes the separately maintained [Strata inference engine](https://github.com/Niko1221/Strata), [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared), Kaggle services, and the selected model distribution. These components are not authored or maintained by this repository and remain subject to their own licenses and terms.
 
-The project-specific configuration, notebook integration, cybersecurity learning focus, and documentation in this repository are maintained as part of this project. Third-party components remain subject to their respective upstream licenses and terms.
+The project does not implement the Strata inference engine or claim ownership of Qwen model weights.
