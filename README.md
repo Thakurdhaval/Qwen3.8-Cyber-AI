@@ -71,13 +71,8 @@ flowchart TD
     F --> G[Browser Chat]
 ```
 
-The experimental path depends on the hardware actually assigned to the Kaggle session, model availability, third-party software, and runtime limits. The diagram describes the intended workflow, not a guarantee of successful execution.
+The experimental path depends on the hardware actually assigned to the Kaggle session, model availability, and runtime limits. The diagram describes the intended workflow, not a guarantee of successful execution.
 
-### Third-party components and project contributions
-
-The experimental notebook uses a [third-party Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to [a specific upstream commit](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the source code and dependencies before execution.
-
-The project-specific configuration, notebook integration, cybersecurity learning focus, and documentation in this repository are maintained as part of this project. Third-party components remain subject to their respective upstream licenses and terms.
 
 ## Model paths
 
@@ -99,7 +94,7 @@ The repository also contains a separate Kaggle notebook for experimenting with t
 - Target configuration documented by this project: **2 × NVIDIA Tesla T4**.
 - The notebook checks the visible GPU count before proceeding.
 - The workflow is experimental; Kaggle hardware availability and compatibility are not guaranteed.
-- Review the third-party helper code and upstream documentation before executing cells.
+- Review the setup instructions and linked technical documentation before executing cells.
 - Do not assume that model memory estimates guarantee a successful load.
 
 **Open the experimental workflow:**
@@ -300,3 +295,9 @@ This project is distributed under the [MIT License](LICENSE).
   <br/>
   Maintained by <a href="https://github.com/Thakurdhaval">Dhaval</a>
 </p>
+
+## Credits and external components
+
+The experimental notebook uses a [third-party Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to [a specific upstream commit](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the source code and dependencies before execution.
+
+The project-specific configuration, notebook integration, cybersecurity learning focus, and documentation in this repository are maintained as part of this project. Third-party components remain subject to their respective upstream licenses and terms.
