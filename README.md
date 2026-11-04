@@ -83,7 +83,17 @@ Open the local URL printed by Gradio. To create a temporary public share link, s
 
 ## Kaggle
 
-See [docs/kaggle_setup.md](docs/kaggle_setup.md) for a GPU notebook workflow. A single Tesla T4 is not equivalent to a multi-GPU T4x2 setup. Large models may not fit, even with quantization or CPU offload. Start with the default 4B model and verify actual memory use.
+### 125B Gyro-S on T4x2
+
+[**Open Kaggle Notebook Editor**](https://www.kaggle.com/notebooks/welcome) · [View notebook source](notebooks/qwen38_flash_next_125b_gyro_s_t4x2.ipynb) · [Setup guide](docs/kaggle_125b_gyro_s.md)
+
+To load it quickly in Kaggle: open the Kaggle Notebook Editor, choose **File → Load from URL**, and paste this public raw notebook URL:
+
+`https://raw.githubusercontent.com/Thakurdhaval/Qwen3.8-Cyber-AI/main/notebooks/qwen38_flash_next_125b_gyro_s_t4x2.ipynb`
+
+The notebook includes a password-protected **Gradio chat GUI** that starts after the model passes its API test. It provides a browser chat interface similar to ChatGPT; the GUI is temporary and exists only while the Kaggle session is running.
+
+The 125B workflow is experimental and is not guaranteed to run in every Kaggle session. Verify two visible T4 GPUs and review the Strata launch plan before downloading or launching the model. For the smaller Transformers-based starter path, see [docs/kaggle_setup.md](docs/kaggle_setup.md).
 
 ## Safety
 
