@@ -75,6 +75,12 @@ flowchart TD
 
 The experimental path depends on the hardware actually assigned to the Kaggle session, model availability, third-party software, and runtime limits. The diagram describes the intended workflow, not a guarantee of successful execution.
 
+### Third-party components and project contributions
+
+The experimental notebook integrates the [Strata setup helper](https://github.com/iAmAjayTeli/devzonex-strata-kaggle), pinned to commit [`ca775962d90a7bc2a4b2db6eecb052e0e399c94c`](https://github.com/iAmAjayTeli/devzonex-strata-kaggle/commit/ca775962d90a7bc2a4b2db6eecb052e0e399c94c) for reproducibility. Review the upstream helper and its dependencies before execution.
+
+The project-specific configuration, notebook integration, cybersecurity learning focus, and documentation in this repository are maintained as part of this project. Third-party components remain subject to their respective upstream licenses and terms.
+
 ## Model paths
 
 ### 1. Starter model — Transformers
